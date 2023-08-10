@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Bulb on off</title>
+  </head>
+  <style>
+
+    body{
+        background: black;
+        /* padding: 2vw; */
+    }
+    h1 {
+      text-align: center;
+      font-size: 7vw;
+      color: crimson !important;
+    }
+    img {
+      width: 300px;
+      height: 500px;
+      float: right;
+     
+    }
+    button {
+      width: 130px;
+      height: 100px;
+      border-radius: 10%;
+      /* margin: 20px; */
+      margin-top: 20vw;
+      margin-left: 20vw;
+      background-color: rgb(27, 230, 31);
+      filter: drop-shadow(4px 10px 4px #fff);
+      /* transform: rotate(130deg); */
+      transition-duration: 0.5s;
+      transition-timing-function: linear ;
+      
+    }
+   
+    button:hover {
+      width: 120px;
+      /* background-color: aqua; */
+      height: 95px;
+    }
+  
+
+
+    .red {
+      background-color: red;
+       
+    }
+    
+
+
+    @media only screen and (max-width: 768px) {
+     img {
+      width: 150px;
+      height: 150px;
+      text-align: center;
+     margin-top: 17vw;
+    }
+    button {
+      width: 102px;
+      height: 51px;
+      border-radius: 10%;
+      /* margin: 20px; */
+      margin-top: 22vw;
+      margin-left: 1vw;
+      background-color: rgb(27, 230, 31);
+      filter: drop-shadow(4px 10px 4px #fff);
+      /* transform: rotate(130deg); */
+      transition-duration: 0.5s;
+      transition-timing-function: linear ;
+      
+    }
+    button:hover {
+      width: 100px;
+      /* background-color: aqua; */
+      height: 41px;
+    }
+    }
+  </style>
+  <body>
+    <h1><b>Light The Bulb</b></h1>
+
+    <img
+      src="Light-bulb-free-to-use-clip-art-2.png"
+      alt=""
+      id="bulboff"
+      class="hello"
+    />
+    
+    <button
+      onclick="myFunction()"
+    >
+      switchON
+    </button>
+
+    <button
+      class="red"
+      onclick="myFunction2()"
+    >
+      switchOff
+    </button>
+
+    <script>
+        
+    function myFunction() {
+            document.body.style.background = "white";
+            document.body.style.color="Black";
+            document.getElementById('bulboff').src='onbulb-removebg-preview.png';
+        }
+        function myFunction2() {
+            document.body.style.backgroundColor= "black";
+            document.body.style.color="white";
+            document.getElementById('bulboff').src='Light-bulb-free-to-use-clip-art-2.png';
+        }    
+        
+    </script>
+  </body>
+</html>
